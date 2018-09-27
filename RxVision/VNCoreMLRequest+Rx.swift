@@ -11,7 +11,7 @@ import RxSwift
 
 extension Reactive where Base: VNCoreMLRequest {
     
-    public func request<T>(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) -> RxVNCoreMLRequest<T> {
+    public static func request<T>(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) -> RxVNCoreMLRequest<T> {
         return RxVNCoreMLRequest<T>(model: model, imageCropAndScaleOption: imageCropAndScaleOption)
     }
     
