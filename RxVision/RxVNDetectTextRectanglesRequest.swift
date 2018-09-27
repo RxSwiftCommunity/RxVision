@@ -12,9 +12,10 @@ import RxSwift
 public final class RxVNDetectTextRectanglesRequest<T>: RxVNRequest<T> {
     
     private lazy var _request: VNDetectTextRectanglesRequest = VNDetectTextRectanglesRequest(completionHandler: self.handler?.requestCompletionHandler)
-
-    override public init() {
+    
+    public init(reportCharacterBoxes: Bool) {
         super.init()
+        _request.reportCharacterBoxes = reportCharacterBoxes
     }
     
     override public var request: VNRequest {

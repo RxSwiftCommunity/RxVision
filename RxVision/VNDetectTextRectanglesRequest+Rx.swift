@@ -11,8 +11,8 @@ import RxSwift
 
 extension Reactive where Base: VNDetectTextRectanglesRequest {
     
-    public func request<T>() -> RxVNDetectTextRectanglesRequest<T> {
-        return RxVNDetectTextRectanglesRequest<T>()
+    public func request<T>(reportCharacterBoxes: Bool) -> RxVNDetectTextRectanglesRequest<T> {
+        return RxVNDetectTextRectanglesRequest<T>(reportCharacterBoxes: reportCharacterBoxes)
     }
     
 }
