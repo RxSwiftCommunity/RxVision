@@ -7,11 +7,33 @@
 //
 
 import Vision
+import RxSwift
 
-public protocol RxVNRequest {
+public class RxVNRequest<T> {
     
-    associatedtype T
+    typealias Observer = RxVNRequestCompletionHandler<T>.Observer
     
-    var value: T? { get set }    
-    var request: VNRequest { get }
+    var handler: RxVNRequestCompletionHandler<T>?
+    
+    public var value: T? {
+        get {
+            return self.handler?.value
+        }
+        set {
+            self.handler?.value = newValue
+        }
+    }
+    public lazy var observable: Observable<RequestCompletion<T>> = Observable.create { (observer) in
+        self.handler = RxVNRequestCompletionHandler<T>(observer: observer)
+        return Disposables.create()
+    }
+    public var request: VNRequest { get {
+            preconditionFailure("This method must be overridden")
+        }
+    }
+
+    init() {
+    }
+    
+    
 }

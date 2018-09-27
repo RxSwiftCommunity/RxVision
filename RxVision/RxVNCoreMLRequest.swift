@@ -9,34 +9,19 @@
 import Vision
 import RxSwift
 
-public final class RxVNCoreMLRequest<T>: RxVNRequest {
+public final class RxVNCoreMLRequest<T>: RxVNRequest<T> {
     
-    typealias Observer = RxVNRequestCompletionHandler<T>.Observer
-    
-    private var handler: RxVNRequestCompletionHandler<T>?
-    public lazy var observable: Observable<RequestCompletion<T>> = Observable.create { (observer) in
-        self.handler = RxVNRequestCompletionHandler<T>(observer: observer)
-        return Disposables.create()
-    }
     private lazy var _request: VNCoreMLRequest = VNCoreMLRequest(model: self.model, completionHandler: self.handler?.requestCompletionHandler)
     private let model: VNCoreMLModel
     
     public init(model: VNCoreMLModel) {
         self.model = model
+        super.init()
     }
     
-    public var request: VNRequest {
+    override public var request: VNRequest {
         get {
             return _request
-        }
-    }
-    
-    public var value: T? {
-        get {
-            return self.handler?.value
-        }
-        set {
-            self.handler?.value = newValue
         }
     }
     
