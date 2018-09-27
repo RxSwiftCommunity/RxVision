@@ -12,6 +12,14 @@
 		9482DE212045A33C00A809BC /* RxVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 9482DE132045A33B00A809BC /* RxVision.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9482DE302045A47800A809BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9482DE2F2045A47800A809BC /* RxSwift.framework */; };
 		9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */; };
+		94DF2770215D580300051F68 /* VNRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF276F215D580300051F68 /* VNRequest+Rx.swift */; };
+		94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2771215D65D700051F68 /* RequestCompletion.swift */; };
+		94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */; };
+		94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */; };
+		94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */; };
+		94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2779215D69AC00051F68 /* RxVNRequest.swift */; };
+		94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */; };
+		94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,15 @@
 		9482DE2D2045A42900A809BC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		9482DE2F2045A47800A809BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNImageRequestHandler+Rx.swift"; sourceTree = "<group>"; };
+		9482DE372045AA9100A809BC /* stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stuff.swift; sourceTree = "<group>"; };
+		94DF276F215D580300051F68 /* VNRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF2771215D65D700051F68 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
+		94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequestCompletionHandler.swift; sourceTree = "<group>"; };
+		94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectTextRectanglesRequest.swift; sourceTree = "<group>"; };
+		94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectTextRectanglesRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF2779215D69AC00051F68 /* RxVNRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequest.swift; sourceTree = "<group>"; };
+		94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNCoreMLRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNCoreMLRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +102,18 @@
 		9482DE122045A33B00A809BC /* RxVision */ = {
 			isa = PBXGroup;
 			children = (
+				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
+				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
+				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
+				94DF276F215D580300051F68 /* VNRequest+Rx.swift */,
+				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
+				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
+				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
+				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
 				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
 				9482DE132045A33B00A809BC /* RxVision.h */,
 				9482DE142045A33B00A809BC /* Info.plist */,
+				9482DE372045AA9100A809BC /* stuff.swift */,
 			);
 			path = RxVision;
 			sourceTree = "<group>";
@@ -168,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Maxim Volgin";
 				TargetAttributes = {
 					9482DE0F2045A33B00A809BC = {
@@ -231,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		9482DE322045A50800A809BC /* Delete Nested Framework(s) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -245,7 +271,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\n    rm -fr Frameworks\nfi";
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\n    rm -fr Frameworks\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -254,7 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
 				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
+				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
+				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
+				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
+				94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */,
+				94DF2770215D580300051F68 /* VNRequest+Rx.swift in Sources */,
+				94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */,
+				94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +325,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -298,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -326,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -351,6 +387,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -358,6 +395,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -380,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -448,6 +486,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxVisionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVisionTests;
@@ -462,6 +501,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RxVisionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVisionTests;

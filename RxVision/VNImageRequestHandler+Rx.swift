@@ -11,6 +11,15 @@ import RxSwift
 
 extension Reactive where Base: VNImageRequestHandler {
     
+    public func perform<R: RxVNRequest>(_ requests: [R], with value: R.T? = nil) throws {
+        requests.forEach { (r) in
+            var request = r
+            request.value = value
+        }
+        try self.base.perform(requests.map { $0.request })
+    }
+
+    // deprecated
     public func perform(_ requests: [VNRequest]) -> Completable {
         return Completable.create { completable in
             do {
