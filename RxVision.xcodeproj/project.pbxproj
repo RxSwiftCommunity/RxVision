@@ -20,6 +20,7 @@
 		94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2779215D69AC00051F68 /* RxVNRequest.swift */; };
 		94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */; };
 		94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */; };
+		94DF2792215E973600051F68 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2791215E973600051F68 /* Log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,6 @@
 		9482DE2D2045A42900A809BC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		9482DE2F2045A47800A809BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNImageRequestHandler+Rx.swift"; sourceTree = "<group>"; };
-		9482DE372045AA9100A809BC /* stuff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stuff.swift; sourceTree = "<group>"; };
 		94DF276F215D580300051F68 /* VNRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNRequest+Rx.swift"; sourceTree = "<group>"; };
 		94DF2771215D65D700051F68 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
 		94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequestCompletionHandler.swift; sourceTree = "<group>"; };
@@ -54,6 +54,7 @@
 		94DF2779215D69AC00051F68 /* RxVNRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequest.swift; sourceTree = "<group>"; };
 		94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNCoreMLRequest+Rx.swift"; sourceTree = "<group>"; };
 		94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNCoreMLRequest.swift; sourceTree = "<group>"; };
+		94DF2791215E973600051F68 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +112,9 @@
 				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
 				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
 				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
+				94DF2791215E973600051F68 /* Log.swift */,
 				9482DE132045A33B00A809BC /* RxVision.h */,
 				9482DE142045A33B00A809BC /* Info.plist */,
-				9482DE372045AA9100A809BC /* stuff.swift */,
 			);
 			path = RxVision;
 			sourceTree = "<group>";
@@ -282,6 +283,7 @@
 			files = (
 				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
 				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
+				94DF2792215E973600051F68 /* Log.swift in Sources */,
 				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
 				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
 				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,

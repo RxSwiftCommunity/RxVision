@@ -8,20 +8,21 @@
 
 import Vision
 import RxSwift
+import os.log
 
 final class RxVNRequestCompletionHandler<T> {
     
     typealias Observer = AnyObserver<RequestCompletion<T>>
     
-    private let observer: Observer
+    var observer: Observer? = nil
     
     public var value: T? = nil
     public lazy var requestCompletionHandler: VNRequestCompletionHandler = { (request: VNRequest, error: Error?) in
-        self.observer.onNext(RequestCompletion(self.value, request, error))
+        os_log("RxVNRequestCompletionHandler.requestCompletionHandler %@ %@", log: Log.vn, type: .debug, request, "\(error)")
+        self.observer?.onNext(RequestCompletion(self.value, request, error))
     }
     
-    init(observer: Observer) {
-        self.observer = observer
+    init() {
     }
     
 }

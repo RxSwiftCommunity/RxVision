@@ -11,19 +11,11 @@ import RxSwift
 
 public final class RxVNCoreMLRequest<T>: RxVNRequest<T> {
     
-    private lazy var _request: VNCoreMLRequest = VNCoreMLRequest(model: self.model, completionHandler: self.handler?.requestCompletionHandler)
-    private let model: VNCoreMLModel
-    
     public init(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) {
-        self.model = model
-        super.init()
-        _request.imageCropAndScaleOption = imageCropAndScaleOption
-    }
-    
-    override public var request: VNRequest {
-        get {
-            return _request
-        }
+        let handler = RxVNRequestCompletionHandler<T>()
+        let request: VNCoreMLRequest = VNCoreMLRequest(model: model, completionHandler: handler.requestCompletionHandler)
+        request.imageCropAndScaleOption = imageCropAndScaleOption
+        super.init(request: request, handler: handler)
     }
     
 }

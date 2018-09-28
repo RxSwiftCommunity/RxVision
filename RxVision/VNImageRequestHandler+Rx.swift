@@ -6,16 +6,19 @@
 //  Copyright © 2018 Maxim Volgin. All rights reserved.
 //
 
+import os.log
 import Vision
 import RxSwift
 
 extension Reactive where Base: VNImageRequestHandler {
     
     public func perform<T>(_ requests: [RxVNRequest<T>], with value: T? = nil) throws {
-        requests.forEach { (request) in
+        let _requests = requests.map { request -> VNRequest in
             request.value = value
+            return request.request
         }
-        try self.base.perform(requests.map { $0.request })
+        os_log("VNImageRequestHandler.rx.perform %@ %@", log: Log.vn, type: .debug, "\(value)", _requests)
+        try self.base.perform(_requests)
     }
 
     // deprecated

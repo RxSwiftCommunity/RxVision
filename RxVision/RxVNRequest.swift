@@ -8,32 +8,27 @@
 
 import Vision
 import RxSwift
+import os.log
 
 public class RxVNRequest<T> {
     
-    typealias Observer = RxVNRequestCompletionHandler<T>.Observer
-    
-    var handler: RxVNRequestCompletionHandler<T>?
-    
-    public var value: T? {
-        get {
-            return self.handler?.value
-        }
-        set {
-            self.handler?.value = newValue
-        }
-    }
     public lazy var observable: Observable<RequestCompletion<T>> = Observable.create { (observer) in
-        self.handler = RxVNRequestCompletionHandler<T>(observer: observer)
+        self.handler.observer = observer
+        os_log("RxVNRequest.observable %@", log: Log.vn, type: .debug, "\(self.handler)")
         return Disposables.create()
     }
-    public var request: VNRequest { get {
-            preconditionFailure("This method must be overridden")
-        }
-    }
-
-    init() {
+    
+    public var value: T? = nil
+    public let request: VNRequest
+    private let handler: RxVNRequestCompletionHandler<T>
+    
+    init(request: VNRequest, handler: RxVNRequestCompletionHandler<T>) {
+        self.request = request
+        self.handler = handler
     }
     
+    func requestCompletionHandler(request: VNRequest, error: Error?) {
+        preconditionFailure("This method must be overridden")
+    }
     
 }
