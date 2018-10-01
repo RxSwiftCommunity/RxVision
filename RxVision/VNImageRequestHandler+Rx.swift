@@ -12,9 +12,9 @@ import RxSwift
 
 extension Reactive where Base: VNImageRequestHandler {
     
-    public func perform<T>(_ requests: [RxVNRequest<T>], with value: T? = nil) throws {
+    public func perform<T>(_ requests: [RxVNRequest<T>], with value: T) throws {
         let _requests = requests.map { request -> VNRequest in
-            request.value = value
+            request.set(value: value)
             return request.request
         }
         os_log("VNImageRequestHandler.rx.perform %@ %@", log: Log.vn, type: .debug, "\(value)", _requests)

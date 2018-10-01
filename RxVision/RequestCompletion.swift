@@ -8,4 +8,7 @@
 
 import Vision
 
+typealias _RequestCompletion = (request: VNRequest, error: Error?)
+
 public typealias RequestCompletion<T> = (value: T?, request: VNRequest, error: Error?)
+

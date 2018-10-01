@@ -12,7 +12,7 @@ import RxSwift
 public final class RxVNCoreMLRequest<T>: RxVNRequest<T> {
     
     public init(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) {
-        let handler = RxVNRequestCompletionHandler<T>()
+        let handler = RxVNRequestCompletionHandler()
         let request: VNCoreMLRequest = VNCoreMLRequest(model: model, completionHandler: handler.requestCompletionHandler)
         request.imageCropAndScaleOption = imageCropAndScaleOption
         super.init(request: request, handler: handler)

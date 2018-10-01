@@ -12,17 +12,25 @@ import os.log
 
 public class RxVNRequest<T> {
     
-    public lazy var observable: Observable<RequestCompletion<T>> = Observable.create { (observer) in
+    private let valueSubject: PublishSubject<T> = PublishSubject<T>()
+    private lazy var _observable: Observable<_RequestCompletion> = Observable.create { (observer) in
         self.handler.observer = observer
         os_log("RxVNRequest.observable %@", log: Log.vn, type: .debug, "\(self.handler)")
         return Disposables.create()
     }
     
-    public var value: T? = nil
-    public let request: VNRequest
-    private let handler: RxVNRequestCompletionHandler<T>
+    public lazy var observable: Observable<RequestCompletion<T>> = Observable.zip(valueSubject, _observable) {
+        return RequestCompletion($0, $1.0, $1.1)
+    }
     
-    init(request: VNRequest, handler: RxVNRequestCompletionHandler<T>) {
+    public func set(value: T) {
+        self.valueSubject.onNext(value)
+    }
+    
+    public let request: VNRequest
+    private let handler: RxVNRequestCompletionHandler
+    
+    init(request: VNRequest, handler: RxVNRequestCompletionHandler) {
         self.request = request
         self.handler = handler
     }

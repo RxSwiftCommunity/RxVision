@@ -12,7 +12,7 @@ import RxSwift
 public final class RxVNDetectTextRectanglesRequest<T>: RxVNRequest<T> {
     
     public init(reportCharacterBoxes: Bool) {
-        let handler = RxVNRequestCompletionHandler<T>()
+        let handler = RxVNRequestCompletionHandler()
         let request: VNDetectTextRectanglesRequest = VNDetectTextRectanglesRequest(completionHandler: handler.requestCompletionHandler)
         request.reportCharacterBoxes = reportCharacterBoxes
         super.init(request: request, handler: handler)
