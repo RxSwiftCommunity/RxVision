@@ -8,7 +8,6 @@
 
 import Vision
 import RxSwift
-import os.log
 
 final class RxVNRequestCompletionHandler {
     
@@ -17,7 +16,6 @@ final class RxVNRequestCompletionHandler {
     var observer: Observer? = nil
     
     public lazy var requestCompletionHandler: VNRequestCompletionHandler = { (request: VNRequest, error: Error?) in
-        os_log("RxVNRequestCompletionHandler.requestCompletionHandler %@ %@", log: Log.vn, type: .debug, request, "\(String(describing: error))")
         self.observer?.onNext(_RequestCompletion(request, error))
     }
     

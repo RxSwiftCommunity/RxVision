@@ -6,7 +6,6 @@
 //  Copyright © 2018 Maxim Volgin. All rights reserved.
 //
 
-import os.log
 import Vision
 import RxSwift
 
@@ -17,21 +16,7 @@ extension Reactive where Base: VNImageRequestHandler {
             request.set(value: value)
             return request.request
         }
-        os_log("VNImageRequestHandler.rx.perform %@ %@", log: Log.vn, type: .debug, "\(value)", _requests)
         try self.base.perform(_requests)
     }
 
-    // deprecated
-    public func perform(_ requests: [VNRequest]) -> Completable {
-        return Completable.create { completable in
-            do {
-                try self.base.perform(requests)
-                completable(.completed)
-            } catch {
-                completable(.error(error))
-            }
-            return Disposables.create()
-        }
-    }
-    
 }

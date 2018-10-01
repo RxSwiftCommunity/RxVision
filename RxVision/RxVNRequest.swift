@@ -8,14 +8,12 @@
 
 import Vision
 import RxSwift
-import os.log
 
 public class RxVNRequest<T> {
     
     private let valueSubject: PublishSubject<T> = PublishSubject<T>()
     private lazy var _observable: Observable<_RequestCompletion> = Observable.create { (observer) in
         self.handler.observer = observer
-        os_log("RxVNRequest.observable %@", log: Log.vn, type: .debug, "\(self.handler)")
         return Disposables.create()
     }
     
