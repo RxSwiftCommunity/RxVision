@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */; };
+		944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */; };
+		944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */; };
+		944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */; };
+		944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */; };
+		944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */; };
 		9482DE1A2045A33C00A809BC /* RxVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9482DE102045A33B00A809BC /* RxVision.framework */; };
 		9482DE1F2045A33C00A809BC /* RxVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482DE1E2045A33C00A809BC /* RxVisionTests.swift */; };
 		9482DE212045A33C00A809BC /* RxVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 9482DE132045A33B00A809BC /* RxVision.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectBarcodesRequest.swift; sourceTree = "<group>"; };
+		944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectBarcodesRequest+Rx.swift"; sourceTree = "<group>"; };
+		944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectRectanglesRequest.swift; sourceTree = "<group>"; };
+		944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectRectanglesRequest+Rx.swift"; sourceTree = "<group>"; };
+		944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectFaceLandmarksRequest.swift; sourceTree = "<group>"; };
+		944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectFaceLandmarksRequest+Rx.swift"; sourceTree = "<group>"; };
 		9482DE102045A33B00A809BC /* RxVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9482DE132045A33B00A809BC /* RxVision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxVision.h; sourceTree = "<group>"; };
 		9482DE142045A33B00A809BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,14 +111,20 @@
 		9482DE122045A33B00A809BC /* RxVision */ = {
 			isa = PBXGroup;
 			children = (
-				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
 				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
+				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
+				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
 				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
 				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
 				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
+				944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */,
+				944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */,
+				944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */,
+				944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */,
+				944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */,
+				944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */,
 				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
 				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
-				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
 				9482DE132045A33B00A809BC /* RxVision.h */,
 				9482DE142045A33B00A809BC /* Info.plist */,
 			);
@@ -276,12 +294,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */,
 				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
 				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
+				944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */,
 				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
+				944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */,
+				944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */,
 				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
 				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
 				94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */,
+				944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */,
+				944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */,
 				94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */,
 				94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */,
 			);
