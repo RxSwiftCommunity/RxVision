@@ -9,7 +9,7 @@
 import Vision
 import RxSwift
 
-public final class RxRxVNDetectBarcodesRequest<T>: RxVNRequest<T> {
+public final class RxVNDetectBarcodesRequest<T>: RxVNRequest<T> {
     
     public init(symbologies: [VNBarcodeSymbology]) {
         let handler = RxVNRequestCompletionHandler()
