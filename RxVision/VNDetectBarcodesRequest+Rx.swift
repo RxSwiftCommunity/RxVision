@@ -11,8 +11,8 @@ import RxSwift
 
 extension Reactive where Base: VNDetectBarcodesRequest {
     
-    public static func request<T>(symbologies: [VNBarcodeSymbology]) -> RxRxVNDetectBarcodesRequest<T> {
-        return RxRxVNDetectBarcodesRequest<T>(symbologies: symbologies)
+    public static func request<T>(symbologies: [VNBarcodeSymbology]) -> RxVNDetectBarcodesRequest<T> {
+        return RxVNDetectBarcodesRequest<T>(symbologies: symbologies)
     }
     
 }
