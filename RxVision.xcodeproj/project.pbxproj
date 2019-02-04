@@ -18,6 +18,12 @@
 		9482DE212045A33C00A809BC /* RxVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 9482DE132045A33B00A809BC /* RxVision.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9482DE302045A47800A809BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9482DE2F2045A47800A809BC /* RxSwift.framework */; };
 		9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */; };
+		94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */; };
+		94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */; };
+		94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */; };
+		94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */; };
+		94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */; };
+		94B74BCC2208DE6F002F98DF /* RequestSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCB2208DE6F002F98DF /* RequestSequence.swift */; };
 		94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2771215D65D700051F68 /* RequestCompletion.swift */; };
 		94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */; };
 		94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */; };
@@ -56,6 +62,12 @@
 		9482DE2D2045A42900A809BC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		9482DE2F2045A47800A809BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNImageRequestHandler+Rx.swift"; sourceTree = "<group>"; };
+		94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackObjectRequest+Rx.swift"; sourceTree = "<group>"; };
+		94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackObjectRequest.swift; sourceTree = "<group>"; };
+		94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackRectangleRequest.swift; sourceTree = "<group>"; };
+		94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackRectangleRequest+Rx.swift"; sourceTree = "<group>"; };
+		94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNSequenceRequestHandler.swift; sourceTree = "<group>"; };
+		94B74BCB2208DE6F002F98DF /* RequestSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSequence.swift; sourceTree = "<group>"; };
 		94DF2771215D65D700051F68 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
 		94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequestCompletionHandler.swift; sourceTree = "<group>"; };
 		94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectTextRectanglesRequest.swift; sourceTree = "<group>"; };
@@ -92,6 +104,9 @@
 				9482DE2C2045A42900A809BC /* Cartfile.resolved */,
 				9482DE2B2045A40C00A809BC /* LICENSE */,
 				9482DE2A2045A40000A809BC /* README.md */,
+				94B74BBD2208DB8E002F98DF /* Track */,
+				94B74BBE2208DB99002F98DF /* Detect */,
+				94B74BCA2208DD43002F98DF /* Vision */,
 				9482DE122045A33B00A809BC /* RxVision */,
 				9482DE1D2045A33C00A809BC /* RxVisionTests */,
 				9482DE112045A33B00A809BC /* Products */,
@@ -111,20 +126,6 @@
 		9482DE122045A33B00A809BC /* RxVision */ = {
 			isa = PBXGroup;
 			children = (
-				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
-				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
-				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
-				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
-				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
-				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
-				944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */,
-				944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */,
-				944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */,
-				944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */,
-				944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */,
-				944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */,
-				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
-				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
 				9482DE132045A33B00A809BC /* RxVision.h */,
 				9482DE142045A33B00A809BC /* Info.plist */,
 			);
@@ -146,6 +147,47 @@
 				9482DE2F2045A47800A809BC /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94B74BBD2208DB8E002F98DF /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */,
+				94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */,
+				94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */,
+				94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */,
+				94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */,
+				94B74BCB2208DE6F002F98DF /* RequestSequence.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		94B74BBE2208DB99002F98DF /* Detect */ = {
+			isa = PBXGroup;
+			children = (
+				944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */,
+				944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */,
+				944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */,
+				944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */,
+				944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */,
+				944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */,
+				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
+				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
+			);
+			path = Detect;
+			sourceTree = "<group>";
+		};
+		94B74BCA2208DD43002F98DF /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
+				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
+				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
+				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
+				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
+				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
+			);
+			path = Vision;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,15 +336,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */,
 				944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */,
 				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
 				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
 				944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */,
 				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
+				94B74BCC2208DE6F002F98DF /* RequestSequence.swift in Sources */,
 				944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */,
+				94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */,
 				944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */,
+				94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */,
 				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
+				94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */,
 				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
+				94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */,
 				94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */,
 				944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */,
 				944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */,
