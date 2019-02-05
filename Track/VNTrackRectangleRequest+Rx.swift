@@ -9,10 +9,10 @@
 import Vision
 import RxSwift
 
-extension Reactive where Base: VNTrackRectanglesRequest {
+extension Reactive where Base: VNTrackRectangleRequest {
     
-    public static func request<T>() -> RxVNTrackRectanglesRequest<T> {
-        return RxVNTrackRectanglesRequest<T>()
+    public static func request<T>() -> RxVNTrackRectangleRequest<T> {
+        return RxVNTrackRectangleRequest<T>()
     }
     
 }

@@ -24,6 +24,8 @@
 		94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */; };
 		94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */; };
 		94B74BCC2208DE6F002F98DF /* RequestSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCB2208DE6F002F98DF /* RequestSequence.swift */; };
+		94B74BCE22096EE6002F98DF /* RxVNImageBasedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */; };
+		94B74BD022096EF2002F98DF /* RxVNTrackingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */; };
 		94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2771215D65D700051F68 /* RequestCompletion.swift */; };
 		94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */; };
 		94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */; };
@@ -68,6 +70,8 @@
 		94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackRectangleRequest+Rx.swift"; sourceTree = "<group>"; };
 		94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNSequenceRequestHandler.swift; sourceTree = "<group>"; };
 		94B74BCB2208DE6F002F98DF /* RequestSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSequence.swift; sourceTree = "<group>"; };
+		94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNImageBasedRequest.swift; sourceTree = "<group>"; };
+		94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackingRequest.swift; sourceTree = "<group>"; };
 		94DF2771215D65D700051F68 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
 		94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequestCompletionHandler.swift; sourceTree = "<group>"; };
 		94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectTextRectanglesRequest.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */,
 				94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */,
 				94B74BCB2208DE6F002F98DF /* RequestSequence.swift */,
+				94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */,
+				94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */,
 			);
 			path = Track;
 			sourceTree = "<group>";
@@ -182,8 +188,8 @@
 			children = (
 				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
 				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
-				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
 				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
+				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
 				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
 				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
 			);
@@ -344,6 +350,7 @@
 				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
 				94B74BCC2208DE6F002F98DF /* RequestSequence.swift in Sources */,
 				944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */,
+				94B74BD022096EF2002F98DF /* RxVNTrackingRequest.swift in Sources */,
 				94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */,
 				944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */,
 				94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */,
@@ -351,6 +358,7 @@
 				94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */,
 				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
 				94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */,
+				94B74BCE22096EE6002F98DF /* RxVNImageBasedRequest.swift in Sources */,
 				94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */,
 				944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */,
 				944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */,
