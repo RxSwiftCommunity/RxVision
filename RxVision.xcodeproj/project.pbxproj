@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94311B6B220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */; };
 		944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */; };
 		944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */; };
 		944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */; };
@@ -22,7 +23,6 @@
 		94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */; };
 		94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */; };
 		94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */; };
-		94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */; };
 		94B74BCC2208DE6F002F98DF /* RequestSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCB2208DE6F002F98DF /* RequestSequence.swift */; };
 		94B74BCE22096EE6002F98DF /* RxVNImageBasedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */; };
 		94B74BD022096EF2002F98DF /* RxVNTrackingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */; };
@@ -46,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNSequenceRequestHandler+Rx.swift"; sourceTree = "<group>"; };
 		944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectBarcodesRequest.swift; sourceTree = "<group>"; };
 		944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectBarcodesRequest+Rx.swift"; sourceTree = "<group>"; };
 		944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectRectanglesRequest.swift; sourceTree = "<group>"; };
@@ -68,7 +69,6 @@
 		94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackObjectRequest.swift; sourceTree = "<group>"; };
 		94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackRectangleRequest.swift; sourceTree = "<group>"; };
 		94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackRectangleRequest+Rx.swift"; sourceTree = "<group>"; };
-		94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNSequenceRequestHandler.swift; sourceTree = "<group>"; };
 		94B74BCB2208DE6F002F98DF /* RequestSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSequence.swift; sourceTree = "<group>"; };
 		94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNImageBasedRequest.swift; sourceTree = "<group>"; };
 		94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackingRequest.swift; sourceTree = "<group>"; };
@@ -160,7 +160,6 @@
 				94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */,
 				94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */,
 				94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */,
-				94B74BC72208DC28002F98DF /* RxVNSequenceRequestHandler.swift */,
 				94B74BCB2208DE6F002F98DF /* RequestSequence.swift */,
 				94B74BCF22096EF2002F98DF /* RxVNTrackingRequest.swift */,
 				94B74BCD22096EE6002F98DF /* RxVNImageBasedRequest.swift */,
@@ -188,6 +187,7 @@
 			children = (
 				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
 				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
+				94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */,
 				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
 				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
 				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
@@ -344,6 +344,7 @@
 			files = (
 				94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */,
 				944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */,
+				94311B6B220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift in Sources */,
 				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
 				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
 				944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */,
@@ -353,7 +354,6 @@
 				94B74BD022096EF2002F98DF /* RxVNTrackingRequest.swift in Sources */,
 				94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */,
 				944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */,
-				94B74BC82208DC28002F98DF /* RxVNSequenceRequestHandler.swift in Sources */,
 				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
 				94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */,
 				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
