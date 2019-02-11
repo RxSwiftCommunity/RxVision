@@ -9,12 +9,11 @@
 import Vision
 import RxSwift
 
-public final class RxVNTrackObjectRequest<T>: RxVNTrackingRequest<T> {
+public final class RxVNTrackObjectRequest<T>: RxVNRequest<T> {
     
-    public init() {
-        let handler = RxVNSequenceRequestHandler()
-        let request: VNTrackObjectRequest = VNTrackObjectRequest(detectedObjectObservation = ..., completionHandler: handler.requestCompletionHandler)
-        // TODO
+    public init(detectedObjectObservation observation: VNDetectedObjectObservation) {
+        let handler = RxVNRequestCompletionHandler()
+        let request: VNTrackObjectRequest = VNTrackObjectRequest(detectedObjectObservation: observation, completionHandler: handler.requestCompletionHandler)
         super.init(request: request, handler: handler)
     }
     

@@ -11,8 +11,8 @@ import RxSwift
 
 extension Reactive where Base: VNTrackRectangleRequest {
     
-    public static func request<T>() -> RxVNTrackRectangleRequest<T> {
-        return RxVNTrackRectangleRequest<T>()
+    public static func request<T>(rectangleObservation observation: VNRectangleObservation) -> RxVNTrackRectangleRequest<T> {
+        return RxVNTrackRectangleRequest<T>(rectangleObservation: observation)
     }
     
 }

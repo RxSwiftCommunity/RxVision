@@ -11,8 +11,8 @@ import RxSwift
 
 extension Reactive where Base: VNTrackObjectRequest {
     
-    public static func request<T>() -> RxVNTrackObjectRequest<T> {
-        return RxVNTrackObjectRequest<T>()
+    public static func request<T>(detectedObjectObservation observation: VNDetectedObjectObservation) -> RxVNTrackObjectRequest<T> {
+        return RxVNTrackObjectRequest<T>(detectedObjectObservation: observation)
     }
     
 }
