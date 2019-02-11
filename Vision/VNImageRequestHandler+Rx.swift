@@ -11,11 +11,8 @@ import RxSwift
 
 extension Reactive where Base: VNImageRequestHandler {
     
-    public func perform<T>(_ requests: [RxVNRequest<T>], with value: T) throws {
-        let _requests = requests.map { request -> VNRequest in
-            request.set(value: value)
-            return request.request
-        }
+    public func perform<T>(_ requests: [RxVNRequest<T>], on value: T) throws {
+        let _requests = RxVNRequest<T>.setAndMap(requests, on: value)
         try self.base.perform(_requests)
     }
 

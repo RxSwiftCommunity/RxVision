@@ -23,7 +23,7 @@ mlRequest
 
 let imageRequestHandler = VNImageRequestHandler(cgImage: cgImage, orientation: .up, options: requestOptions)
 do {
-    try imageRequestHandler.rx.perform([mlRequest], with: cgImage) // NB you can easily pass the value along to the completion handler
+    try imageRequestHandler.rx.perform([mlRequest], on: cgImage) // NB you can easily pass the value along to the completion handler
 } catch {
     print(error)
 }

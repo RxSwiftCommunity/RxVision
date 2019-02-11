@@ -37,4 +37,12 @@ public class RxVNRequest<T> {
         preconditionFailure("This method must be overridden")
     }
     
+    // MARK: - internal
+    static func setAndMap<T>(_ requests: [RxVNRequest<T>], on value: T) -> [VNRequest] {
+        return requests.map { request -> VNRequest in
+            request.set(value: value)
+            return request.request
+        }
+    }
+    
 }
