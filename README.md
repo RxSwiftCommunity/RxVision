@@ -32,7 +32,7 @@ do {
 Carthage setup.
 
 ```
-github "maxvol/RxVision" ~> 0.0.7
+github "maxvol/RxVision" ~> 0.1.0
 
 ```
 
