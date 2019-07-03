@@ -32,7 +32,8 @@ do {
 Carthage setup.
 
 ```
-github "maxvol/RxVision" ~> 0.1.0
+github "RxSwiftCommunity/RxVision" ~> 0.1.0
 
 ```
 
+Copyright (c) RxSwiftCommunity
