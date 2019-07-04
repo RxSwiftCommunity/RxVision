@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94311B6B220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */; };
+		944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */; };
+		944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */; };
+		944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */; };
+		944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */; };
+		944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */; };
+		944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */; };
+		9482DE1A2045A33C00A809BC /* RxVision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9482DE102045A33B00A809BC /* RxVision.framework */; };
+		9482DE1F2045A33C00A809BC /* RxVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482DE1E2045A33C00A809BC /* RxVisionTests.swift */; };
+		9482DE212045A33C00A809BC /* RxVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 9482DE132045A33B00A809BC /* RxVision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9482DE302045A47800A809BC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9482DE2F2045A47800A809BC /* RxSwift.framework */; };
+		9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */; };
+		94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */; };
+		94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */; };
+		94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */; };
+		94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */; };
+		94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2771215D65D700051F68 /* RequestCompletion.swift */; };
+		94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */; };
+		94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */; };
+		94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */; };
+		94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF2779215D69AC00051F68 /* RxVNRequest.swift */; };
+		94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */; };
+		94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9482DE1B2045A33C00A809BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9482DE072045A33B00A809BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9482DE0F2045A33B00A809BC;
+			remoteInfo = RxVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNSequenceRequestHandler+Rx.swift"; sourceTree = "<group>"; };
+		944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectBarcodesRequest.swift; sourceTree = "<group>"; };
+		944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectBarcodesRequest+Rx.swift"; sourceTree = "<group>"; };
+		944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectRectanglesRequest.swift; sourceTree = "<group>"; };
+		944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectRectanglesRequest+Rx.swift"; sourceTree = "<group>"; };
+		944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectFaceLandmarksRequest.swift; sourceTree = "<group>"; };
+		944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectFaceLandmarksRequest+Rx.swift"; sourceTree = "<group>"; };
+		9482DE102045A33B00A809BC /* RxVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9482DE132045A33B00A809BC /* RxVision.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxVision.h; sourceTree = "<group>"; };
+		9482DE142045A33B00A809BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9482DE192045A33C00A809BC /* RxVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9482DE1E2045A33C00A809BC /* RxVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVisionTests.swift; sourceTree = "<group>"; };
+		9482DE202045A33C00A809BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9482DE2A2045A40000A809BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9482DE2B2045A40C00A809BC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9482DE2C2045A42900A809BC /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		9482DE2D2045A42900A809BC /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		9482DE2F2045A47800A809BC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNImageRequestHandler+Rx.swift"; sourceTree = "<group>"; };
+		94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackObjectRequest+Rx.swift"; sourceTree = "<group>"; };
+		94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackObjectRequest.swift; sourceTree = "<group>"; };
+		94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNTrackRectangleRequest.swift; sourceTree = "<group>"; };
+		94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNTrackRectangleRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF2771215D65D700051F68 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
+		94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequestCompletionHandler.swift; sourceTree = "<group>"; };
+		94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNDetectTextRectanglesRequest.swift; sourceTree = "<group>"; };
+		94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNDetectTextRectanglesRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF2779215D69AC00051F68 /* RxVNRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNRequest.swift; sourceTree = "<group>"; };
+		94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNCoreMLRequest+Rx.swift"; sourceTree = "<group>"; };
+		94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxVNCoreMLRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9482DE0C2045A33B00A809BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9482DE302045A47800A809BC /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9482DE162045A33C00A809BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9482DE1A2045A33C00A809BC /* RxVision.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9482DE062045A33B00A809BC = {
+			isa = PBXGroup;
+			children = (
+				9482DE2D2045A42900A809BC /* Cartfile */,
+				9482DE2C2045A42900A809BC /* Cartfile.resolved */,
+				9482DE2B2045A40C00A809BC /* LICENSE */,
+				9482DE2A2045A40000A809BC /* README.md */,
+				94B74BBD2208DB8E002F98DF /* Track */,
+				94B74BBE2208DB99002F98DF /* Detect */,
+				94B74BCA2208DD43002F98DF /* Vision */,
+				9482DE122045A33B00A809BC /* RxVision */,
+				9482DE1D2045A33C00A809BC /* RxVisionTests */,
+				9482DE112045A33B00A809BC /* Products */,
+				9482DE2E2045A47700A809BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9482DE112045A33B00A809BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9482DE102045A33B00A809BC /* RxVision.framework */,
+				9482DE192045A33C00A809BC /* RxVisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9482DE122045A33B00A809BC /* RxVision */ = {
+			isa = PBXGroup;
+			children = (
+				9482DE132045A33B00A809BC /* RxVision.h */,
+				9482DE142045A33B00A809BC /* Info.plist */,
+			);
+			path = RxVision;
+			sourceTree = "<group>";
+		};
+		9482DE1D2045A33C00A809BC /* RxVisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				9482DE1E2045A33C00A809BC /* RxVisionTests.swift */,
+				9482DE202045A33C00A809BC /* Info.plist */,
+			);
+			path = RxVisionTests;
+			sourceTree = "<group>";
+		};
+		9482DE2E2045A47700A809BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9482DE2F2045A47800A809BC /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94B74BBD2208DB8E002F98DF /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				94B74BC12208DBEF002F98DF /* RxVNTrackObjectRequest.swift */,
+				94B74BBF2208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift */,
+				94B74BC32208DC06002F98DF /* RxVNTrackRectangleRequest.swift */,
+				94B74BC52208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift */,
+			);
+			path = Track;
+			sourceTree = "<group>";
+		};
+		94B74BBE2208DB99002F98DF /* Detect */ = {
+			isa = PBXGroup;
+			children = (
+				944FB18C2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift */,
+				944FB18E2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift */,
+				944FB1902163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift */,
+				944FB1922163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift */,
+				944FB1942163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift */,
+				944FB1962163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift */,
+				94DF2775215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift */,
+				94DF2777215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift */,
+			);
+			path = Detect;
+			sourceTree = "<group>";
+		};
+		94B74BCA2208DD43002F98DF /* Vision */ = {
+			isa = PBXGroup;
+			children = (
+				94DF277D215D6F1400051F68 /* RxVNCoreMLRequest.swift */,
+				94DF277B215D6E9900051F68 /* VNCoreMLRequest+Rx.swift */,
+				94311B6A220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift */,
+				9482DE332045A5B300A809BC /* VNImageRequestHandler+Rx.swift */,
+				94DF2773215D65E600051F68 /* RxVNRequestCompletionHandler.swift */,
+				94DF2771215D65D700051F68 /* RequestCompletion.swift */,
+				94DF2779215D69AC00051F68 /* RxVNRequest.swift */,
+			);
+			path = Vision;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9482DE0D2045A33B00A809BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9482DE212045A33C00A809BC /* RxVision.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9482DE0F2045A33B00A809BC /* RxVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9482DE242045A33C00A809BC /* Build configuration list for PBXNativeTarget "RxVision" */;
+			buildPhases = (
+				9482DE0B2045A33B00A809BC /* Sources */,
+				9482DE0C2045A33B00A809BC /* Frameworks */,
+				9482DE0D2045A33B00A809BC /* Headers */,
+				9482DE0E2045A33B00A809BC /* Resources */,
+				9482DE312045A50600A809BC /* Carthage */,
+				9482DE322045A50800A809BC /* Delete Nested Framework(s) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxVision;
+			productName = RxVision;
+			productReference = 9482DE102045A33B00A809BC /* RxVision.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9482DE182045A33C00A809BC /* RxVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9482DE272045A33C00A809BC /* Build configuration list for PBXNativeTarget "RxVisionTests" */;
+			buildPhases = (
+				9482DE152045A33C00A809BC /* Sources */,
+				9482DE162045A33C00A809BC /* Frameworks */,
+				9482DE172045A33C00A809BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9482DE1C2045A33C00A809BC /* PBXTargetDependency */,
+			);
+			name = RxVisionTests;
+			productName = RxVisionTests;
+			productReference = 9482DE192045A33C00A809BC /* RxVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9482DE072045A33B00A809BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Maxim Volgin";
+				TargetAttributes = {
+					9482DE0F2045A33B00A809BC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+					9482DE182045A33C00A809BC = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9482DE0A2045A33B00A809BC /* Build configuration list for PBXProject "RxVision" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9482DE062045A33B00A809BC;
+			productRefGroup = 9482DE112045A33B00A809BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9482DE0F2045A33B00A809BC /* RxVision */,
+				9482DE182045A33C00A809BC /* RxVisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9482DE0E2045A33B00A809BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9482DE172045A33C00A809BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9482DE312045A50600A809BC /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		9482DE322045A50800A809BC /* Delete Nested Framework(s) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Delete Nested Framework(s)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\n    rm -fr Frameworks\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9482DE0B2045A33B00A809BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B74BC62208DC0F002F98DF /* VNTrackRectangleRequest+Rx.swift in Sources */,
+				944FB1952163FCBC009C1A53 /* RxVNDetectFaceLandmarksRequest.swift in Sources */,
+				94311B6B220D0F6600BE715D /* VNSequenceRequestHandler+Rx.swift in Sources */,
+				94DF2774215D65E600051F68 /* RxVNRequestCompletionHandler.swift in Sources */,
+				9482DE342045A5B300A809BC /* VNImageRequestHandler+Rx.swift in Sources */,
+				944FB18F2163FC88009C1A53 /* VNDetectBarcodesRequest+Rx.swift in Sources */,
+				94DF2772215D65D700051F68 /* RequestCompletion.swift in Sources */,
+				944FB1932163FCA8009C1A53 /* VNDetectRectanglesRequest+Rx.swift in Sources */,
+				94B74BC02208DBDB002F98DF /* VNTrackObjectRequest+Rx.swift in Sources */,
+				944FB18D2163FC7D009C1A53 /* RxVNDetectBarcodesRequest.swift in Sources */,
+				94DF2778215D681700051F68 /* VNDetectTextRectanglesRequest+Rx.swift in Sources */,
+				94B74BC42208DC06002F98DF /* RxVNTrackRectangleRequest.swift in Sources */,
+				94DF277E215D6F1400051F68 /* RxVNCoreMLRequest.swift in Sources */,
+				94B74BC22208DBEF002F98DF /* RxVNTrackObjectRequest.swift in Sources */,
+				94DF277A215D69AC00051F68 /* RxVNRequest.swift in Sources */,
+				944FB1912163FC9E009C1A53 /* RxVNDetectRectanglesRequest.swift in Sources */,
+				944FB1972163FCC5009C1A53 /* VNDetectFaceLandmarksRequest+Rx.swift in Sources */,
+				94DF2776215D67DA00051F68 /* RxVNDetectTextRectanglesRequest.swift in Sources */,
+				94DF277C215D6E9900051F68 /* VNCoreMLRequest+Rx.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9482DE152045A33C00A809BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9482DE1F2045A33C00A809BC /* RxVisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9482DE1C2045A33C00A809BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9482DE0F2045A33B00A809BC /* RxVision */;
+			targetProxy = 9482DE1B2045A33C00A809BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9482DE222045A33C00A809BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9482DE232045A33C00A809BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9482DE252045A33C00A809BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxVision/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVision;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9482DE262045A33C00A809BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = RxVision/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVision;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9482DE282045A33C00A809BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RxVisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9482DE292045A33C00A809BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RxVisionTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maxvol.RxVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9482DE0A2045A33B00A809BC /* Build configuration list for PBXProject "RxVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9482DE222045A33C00A809BC /* Debug */,
+				9482DE232045A33C00A809BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9482DE242045A33C00A809BC /* Build configuration list for PBXNativeTarget "RxVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9482DE252045A33C00A809BC /* Debug */,
+				9482DE262045A33C00A809BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9482DE272045A33C00A809BC /* Build configuration list for PBXNativeTarget "RxVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9482DE282045A33C00A809BC /* Debug */,
+				9482DE292045A33C00A809BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9482DE072045A33B00A809BC /* Project object */;
+}
+
