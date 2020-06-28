@@ -18,7 +18,7 @@ let package = Package(
     targets: [
         .target(
             name: "RxVision",
-            dependencies: ["RxSwift"], // "RxRelay"],
+            dependencies: ["RxSwift"] //, "RxRelay"],
 //             path: "Sources"
         ),
 //        .testTarget(
