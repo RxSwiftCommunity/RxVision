@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 public final class RxVNDetectTextRectanglesRequest<T>: RxVNRequest<T> {
     
     public init(reportCharacterBoxes: Bool) {

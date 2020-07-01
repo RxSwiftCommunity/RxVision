@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 public final class RxVNTrackObjectRequest<T>: RxVNRequest<T> {
     
     public init(detectedObjectObservation observation: VNDetectedObjectObservation) {

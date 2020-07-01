@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 extension Reactive where Base: VNImageRequestHandler {
     
     public func perform<T>(_ requests: [RxVNRequest<T>], on value: T) throws {

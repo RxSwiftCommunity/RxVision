@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 final class RxVNRequestCompletionHandler {
     
     typealias Observer = AnyObserver<_RequestCompletion>

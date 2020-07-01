@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 extension Reactive where Base: VNCoreMLRequest {
     
     public static func request<T>(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) -> RxVNCoreMLRequest<T> {
