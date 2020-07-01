@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 public class RxVNRequest<T> {
     
     private let valueSubject: PublishSubject<T> = PublishSubject<T>()
