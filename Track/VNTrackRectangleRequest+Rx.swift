@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 extension Reactive where Base: VNTrackRectangleRequest {
     
     public static func request<T>(rectangleObservation observation: VNRectangleObservation) -> RxVNTrackRectangleRequest<T> {
