@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 public final class RxVNCoreMLRequest<T>: RxVNRequest<T> {
     
     public init(model: VNCoreMLModel, imageCropAndScaleOption: VNImageCropAndScaleOption) {
