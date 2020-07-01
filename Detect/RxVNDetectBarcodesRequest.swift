@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 public final class RxVNDetectBarcodesRequest<T>: RxVNRequest<T> {
     
     public init(symbologies: [VNBarcodeSymbology]) {
