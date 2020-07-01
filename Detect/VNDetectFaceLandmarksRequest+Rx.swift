@@ -9,6 +9,7 @@
 import Vision
 import RxSwift
 
+@available(iOS 11.0, *)
 extension Reactive where Base: VNDetectFaceLandmarksRequest {
     
     public static func request<T>() -> RxVNDetectFaceLandmarksRequest<T> {
