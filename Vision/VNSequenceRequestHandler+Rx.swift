@@ -8,7 +8,9 @@
 
 import Vision
 import RxSwift
+import CoreImage
 
+@available(iOS 11.0, *)
 extension Reactive where Base: VNSequenceRequestHandler {
     
     // MARK: - CGImage
